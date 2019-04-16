@@ -84,6 +84,7 @@ public class Ops {
         b.put(COMPARE_GREATER_THAN,"compareGreaterThan");
         b.put(COMPARE_GREATER_THAN_EQUAL,"compareGreaterThanEqual");
         b.put(COMPARE_TO,"compareTo");
+        b.put(ASSIGN,"assign");
 
         b.put(FIND_REGEX,"findRegex");
         b.put(MATCH_REGEX,"matchRegex");
