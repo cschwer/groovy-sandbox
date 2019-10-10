@@ -605,8 +605,9 @@ public class SandboxTransformer extends CompilationCustomizer {
                                     transform(be.getRightExpression())
                             );
                         }
+                    } else {
+                        throw new AssertionError("Unexpected LHS of an assignment: " + lhs.getClass());
                     }
-                    throw new AssertionError("Unexpected LHS of an assignment: " + lhs.getClass());
                 }
                 if (be.getOperation().getType()==Types.LEFT_SQUARE_BRACKET) {// array reference
                     if (interceptArray)
